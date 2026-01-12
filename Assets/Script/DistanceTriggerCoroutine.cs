@@ -3,18 +3,20 @@ using System.Collections;
 
 public class DistanceTriggerCoroutine : MonoBehaviour
 {
-    public Transform player;            
-    public float triggerDistance = 2f;  
-    public GameObject Panel; 
-    public float checkInterval = 0.2f;  
+    [SerializeField] private GameObject Panel; // Panel déjà dans la scène
+    [SerializeField] private ParticleSystem particleSystem;
+    [SerializeField] private Transform player;
+
+    public float triggerDistance = 2f;
+    public float checkInterval = 0.2f;
+
     private Animator animator;
     private bool triggered = false;
-    public ParticleSystem particleSystem;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         StartCoroutine(CheckDistanceRoutine());
-         animator = GetComponent<Animator>();
     }
 
     IEnumerator CheckDistanceRoutine()
@@ -26,15 +28,23 @@ public class DistanceTriggerCoroutine : MonoBehaviour
             if (distance <= triggerDistance)
             {
                 triggered = true;
-                Panel.SetActive(true); // Déclenchement de l’action
-                 animator.SetTrigger("Talk");
-                particleSystem.gameObject.SetActive(false);
 
+                
+                if (Panel != null)
+                    Panel.SetActive(true);
 
-                Debug.Log("Distance reached! Action triggered.");
+               
+                if (animator != null)
+                    animator.SetTrigger("Talk");
+
+                
+                if (particleSystem != null)
+                    particleSystem.gameObject.SetActive(false);
+
+                
             }
 
-            yield return new WaitForSeconds(checkInterval); 
+            yield return new WaitForSeconds(checkInterval);
         }
     }
 }
