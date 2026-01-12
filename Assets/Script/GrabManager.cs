@@ -13,7 +13,7 @@ public class DisableOnRelease : MonoBehaviour
 
     void OnRelease(SelectExitEventArgs args)
     {
-        // Désactive l'objet après qu'il ait été relâché
+        
         gameObject.SetActive(false);
     }
 }
