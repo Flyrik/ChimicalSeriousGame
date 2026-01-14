@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 20a0146a627446946a5c2660d456645f
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask
+    second: {fileID: 2100000, guid: 436e052af27463e4ca72d1c9e98534de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_rubber
+    second: {fileID: 2100000, guid: 73d77c55be94d854f878f3eb1766445f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_seal
+    second: {fileID: 2100000, guid: 22f64e75bfe67d441b3dade6d96bd8fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_tank
+    second: {fileID: 2100000, guid: 952bce92053626047856492d0b694caf, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_AlbedoTransparency
+    second: {fileID: 2800000, guid: 05208bec241a98c4187c30669f1cd85f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_MetallicSmoothness
+    second: {fileID: 2800000, guid: 67254bdff27b7ff4d9b7672e406876bb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_Normal
+    second: {fileID: 2800000, guid: 4a9a342e3c60ec444ba1838d33dacb86, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_Roughness
+    second: {fileID: 2800000, guid: 53d1e0889aaa93942af023f1fe896cc0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_rubber_AlbedoTransparency
+    second: {fileID: 2800000, guid: 04189f65b68c47c4aa5c826c4bd449d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_rubber_MetallicSmoothness
+    second: {fileID: 2800000, guid: 98d7d8c5f379176499ca30880041cfda, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_rubber_Normal
+    second: {fileID: 2800000, guid: 945dda201bf0f0d4f8819d89e08e22b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_rubber_Roughness
+    second: {fileID: 2800000, guid: 2f477bc366851fa49a2c7409512dd038, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_rubber_Specular
+    second: {fileID: 2800000, guid: bba6f09ef735cc44792a4dd367249afd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_seal_AlbedoTransparency
+    second: {fileID: 2800000, guid: eb1f392bb50f9e04b9edae62968dd03b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_seal_MetallicSmoothness
+    second: {fileID: 2800000, guid: 9a0d9d486ed2b2f4aae7d5ecc45d1d05, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_seal_Normal
+    second: {fileID: 2800000, guid: 00c58302a03b84040ba811394285368c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_seal_Roughness
+    second: {fileID: 2800000, guid: 23a7de6a4dea155489609708f197a813, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_seal_Specular
+    second: {fileID: 2800000, guid: 9dbca4835b1d36749954f9da1c8acb86, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_tank_AlbedoTransparency
+    second: {fileID: 2800000, guid: 4d17d2a2c598ad64a8329b20455bcefe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_tank_MetallicSmoothness
+    second: {fileID: 2800000, guid: 50bfdfa6e68401244baf5bbf89c64ac7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_tank_Normal
+    second: {fileID: 2800000, guid: 847e93b02ca9d7e42913128af7160909, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_tank_Roughness
+    second: {fileID: 2800000, guid: 62c2e21102c9a264596669a2618fef29, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: double_canister_gas_mask_double_canister_gas_mask_tank_Specular
+    second: {fileID: 2800000, guid: 4abbc6276a4b066498b1a86e8aa75127, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
