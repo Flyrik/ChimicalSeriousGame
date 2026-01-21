@@ -3,7 +3,7 @@ using System.Collections;
 
 public class DistanceTriggerCoroutine : MonoBehaviour
 {
-    [SerializeField] private GameObject Panel; // Panel dÈj‡ dans la scËne
+    [SerializeField] private GameObject Panel; // Panel d√©j√† dans la sc√®ne
     [SerializeField] private ParticleSystem particleSystem;
     [SerializeField] private Transform player;
 
