@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="606babd5-4b7e-4093-8909-c5415c9b83f3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Barrel corrosif.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Barrel corrosif.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Barrel inflammable.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Barrel inflammable.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/magic_ring_03.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/magic_ring_03.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR/Settings/OpenXR Package Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR/Settings/OpenXR Package Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bastos.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bastos.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Flo.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Flo.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Rayane.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Rayane.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChimicalSeriousGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChimicalSeriousGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Walking.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Walking.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/DistanceTriggerCoroutine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/DistanceTriggerCoroutine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="38YmWtG5UB5rD2QYMKRoTNpvao4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,6 +30,10 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   },
@@ -91,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768984914783</updated>
       <workItem from="1768984918443" duration="11000" />
+      <workItem from="1768987372474" duration="1859000" />
     </task>
     <servers />
   </component>

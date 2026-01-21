@@ -8,9 +8,10 @@ public class GameManager : MonoBehaviour
     public GameObject Glasses;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject PanelWelecome;
+    public static bool IsHere = false;
     void Start()
     {
-
+        IsHere = false;
     }
 
     // Update is called once per frame
@@ -25,5 +26,7 @@ public class GameManager : MonoBehaviour
         Gloves.SetActive(true);
         Glasses.SetActive(true);
         PanelWelecome.SetActive(false);
+        IsHere = true;
+        Debug.Log("EPI");
     }
 }
