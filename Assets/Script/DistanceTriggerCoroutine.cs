@@ -10,6 +10,7 @@ public class DistanceTriggerCoroutine : MonoBehaviour
     public GameObject lunettes;
     public GameObject masque;
     public GameObject gants;
+    public AudioSource audioSource;
 
     public float triggerDistance = 2f;
     public float checkInterval = 0.2f;
@@ -17,12 +18,16 @@ public class DistanceTriggerCoroutine : MonoBehaviour
     private Animator animator;
     private bool triggered = false;
     private bool alreadyDone = false;
-
+    public AudioClip audioClip1;
+    public AudioClip audioClip2;
     void Start()
     {
         animator = GetComponent<Animator>();
         StartCoroutine(CheckDistanceRoutine());
         StartCoroutine(CheckObjectsLoop());
+        if (audioSource != null)
+            audioSource.Stop();
+
     }
 
     IEnumerator CheckDistanceRoutine()
@@ -47,7 +52,9 @@ public class DistanceTriggerCoroutine : MonoBehaviour
 
                 if (particleSystem != null)
                     particleSystem.gameObject.SetActive(false);
-
+                if (audioSource != null)
+                    audioSource.clip = audioClip1;
+                    audioSource.Play();
 
             }
 
@@ -75,7 +82,7 @@ public class DistanceTriggerCoroutine : MonoBehaviour
 
         while (!alreadyDone)
         {
-            Debug.Log("OUIIIII");
+            
 
             if (!lunettes.activeSelf &&
                 !masque.activeSelf &&
@@ -86,11 +93,22 @@ public class DistanceTriggerCoroutine : MonoBehaviour
 
                 if (animator != null)
                     animator.SetTrigger("Walk");
-
+                    StartCoroutine(StopAfterTime(12f));
+                    audioSource.clip = audioClip2;
+                    audioSource.Play();
                 yield break; // stop la coroutine
             }
 
             yield return new WaitForSeconds(0.4f);
         }
     }
+
+    IEnumerator StopAfterTime(float time)
+{
+    yield return new WaitForSeconds(time);
+
+    if (animator != null)
+        animator.SetTrigger("Idle");
+}
+
 }
