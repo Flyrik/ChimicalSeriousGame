@@ -32,7 +32,7 @@ public class HandWashZone : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         StopWater();
-        audioSource.Stop();
+        audioSource.Stop(); 
     }
 
     private void StartWater()
