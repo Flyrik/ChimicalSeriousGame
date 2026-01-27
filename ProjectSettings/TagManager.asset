@@ -6,8 +6,10 @@ TagManager:
   tags:
   - Anchor
   - Inflammable
-  - Corosif
   - NoDanger
+  - HazardFloor
+  - Extinguisher
+  - Corrosif
   layers:
   - Default
   - TransparentFX

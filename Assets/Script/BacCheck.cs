@@ -41,7 +41,10 @@ public class BacCheck : MonoBehaviour
 
         UpdateScoreText();
 
-        
+        TrainingManager.Instance?.RegisterBarrelTreated();
+
+
+
         other.gameObject.SetActive(false);
     }
 
