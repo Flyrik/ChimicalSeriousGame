@@ -31,6 +31,7 @@ public class BarrelSpawnerPool : MonoBehaviour
 
     private void Start()
     {
+         spawnCount = 0;
         if (spawnedParent == null) spawnedParent = this.transform;
 
         // Crée le pool : 1 objet de chaque type
@@ -52,6 +53,7 @@ public class BarrelSpawnerPool : MonoBehaviour
         BoutonIndique.SetActive(false);
         BoutonClique.SetActive(false);
         audioSource.Play();
+       
 
     }
 
@@ -78,20 +80,37 @@ public class BarrelSpawnerPool : MonoBehaviour
     }
 
     private void SpawnOneFromPoolRandom()
+{
+    // Crée une liste des objets désactivés dans le pool
+    List<GameObject> inactiveObjects = pool.FindAll(obj => !obj.activeInHierarchy);
+
+    if (inactiveObjects.Count == 0)
     {
-        List<GameObject> inactiveObjects = pool.FindAll(obj => !obj.activeInHierarchy);
-
-        if (inactiveObjects.Count == 0)
-        {
-            Debug.LogWarning("Tous les objets du pool sont actifs !");
-            return;
-        }
-
-        GameObject objToSpawn = inactiveObjects[Random.Range(0, inactiveObjects.Count)];
-        objToSpawn.transform.position = spawnPoint.position;
-        objToSpawn.transform.rotation = spawnPoint.rotation;
-        objToSpawn.SetActive(true);
+        Debug.LogWarning("Tous les objets du pool sont actifs !");
+        return;
     }
+
+    // Choisir un objet au hasard
+    GameObject objToSpawn = inactiveObjects[Random.Range(0, inactiveObjects.Count)];
+
+    // Désactiver avant reposition
+    objToSpawn.SetActive(false);
+
+    // Remettre position et rotation
+    objToSpawn.transform.position = spawnPoint.position;
+    objToSpawn.transform.rotation = spawnPoint.rotation;
+
+    // Reset Rigidbody pour éviter qu'il parte dans la mauvaise direction
+    Rigidbody rb = objToSpawn.GetComponent<Rigidbody>();
+    if (rb != null)
+    {
+        rb.linearVelocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+    }
+
+    // Réactive l'objet
+    objToSpawn.SetActive(true);
+}
 
     private int GetAliveCount()
     {
