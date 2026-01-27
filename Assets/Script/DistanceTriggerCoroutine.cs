@@ -11,10 +11,11 @@ public class DistanceTriggerCoroutine : MonoBehaviour
     public GameObject masque;
     public GameObject gants;
     public AudioSource audioSource;
-
+    public GameObject SuiteConteneur;
+    public GameObject BoutonIndiqu;
     public float triggerDistance = 2f;
     public float checkInterval = 0.2f;
-
+    public GameObject BoutonOfficiel;
     private Animator animator;
     private bool triggered = false;
     private bool alreadyDone = false;
@@ -93,7 +94,7 @@ public class DistanceTriggerCoroutine : MonoBehaviour
 
                 if (animator != null)
                     animator.SetTrigger("Walk");
-                    StartCoroutine(StopAfterTime(12f));
+                    StartCoroutine(StopAfterTime(13f));
                     audioSource.clip = audioClip2;
                     audioSource.Play();
                 yield break; // stop la coroutine
@@ -103,10 +104,21 @@ public class DistanceTriggerCoroutine : MonoBehaviour
         }
     }
 
+    public void StartBouton()
+    {
+        SuiteConteneur.SetActive(false);
+        BoutonIndiqu.SetActive(true);
+        BoutonOfficiel.SetActive(true);
+    }
+
+        
+    
+
     IEnumerator StopAfterTime(float time)
 {
     yield return new WaitForSeconds(time);
-
+    
+    SuiteConteneur.SetActive(true);
     if (animator != null)
         animator.SetTrigger("Idle");
 }

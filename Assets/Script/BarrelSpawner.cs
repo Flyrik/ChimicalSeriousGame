@@ -2,77 +2,101 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarrelSpawner : MonoBehaviour
+public class BarrelSpawnerPool : MonoBehaviour
 {
     [Header("Spawn")]
     public Transform spawnPoint;
-    public GameObject[] barrelPrefabs;
-
+    public GameObject[] barrelPrefabs; 
+    public GameObject BoutonClique;
     [Tooltip("Temps entre 2 spawns")]
     public float spawnInterval = 2.0f;
 
-    [Tooltip("Nombre max de barils présents en même temps")]
-    public int maxAlive = 5;
+    [Tooltip("Nombre max de barils prÃ©sents en mÃªme temps")]
+    public int maxAlive = 3;
 
-    [Tooltip("Parent pour ranger les barils dans la hiérarchie")]
+    [Tooltip("Parent pour ranger les barils dans la hiÃ©rarchie")]
     public Transform spawnedParent;
+    public GameObject BoutonIndique;
 
-    [Header("Anti-overlap (évite de spawn si la place est occupée)")]
+    [Header("Anti-overlap")]
     public float checkRadius = 0.25f;
     public LayerMask overlapMask = ~0;
 
-    private readonly List<GameObject> alive = new();
+    [Header("Limite de spawns")]
+    public int maxSpawns = 10; 
+    private int spawnCount = 0;
+
+    private List<GameObject> pool = new List<GameObject>();
 
     private void Start()
     {
         if (spawnedParent == null) spawnedParent = this.transform;
+
+        // CrÃ©e le pool : 1 objet de chaque type
+        foreach (var prefab in barrelPrefabs)
+        {
+            GameObject obj = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation, spawnedParent);
+            obj.SetActive(false);
+            pool.Add(obj);
+        }
+
+        // Ne rien spawner automatiquement ici
+    }
+
+    // Cette fonction sera appelÃ©e par ton bouton OnClick
+    public void StartSpawning()
+    {
+        spawnCount = 0; // reset compteur
         StartCoroutine(SpawnLoop());
+        BoutonIndique.SetActive(false);
+        BoutonClique.SetActive(false);
     }
 
     private IEnumerator SpawnLoop()
     {
-        while (true)
+        while (spawnCount < maxSpawns)
         {
-            CleanupNulls();
-
-            if (alive.Count < maxAlive && CanSpawn())
+            if (GetAliveCount() < maxAlive && CanSpawn())
             {
-                SpawnOne();
+                SpawnOneFromPoolRandom();
+                spawnCount++;
             }
 
             yield return new WaitForSeconds(spawnInterval);
         }
+
+        Debug.Log("Spawn terminÃ© !");
     }
 
     private bool CanSpawn()
     {
         if (spawnPoint == null) return false;
-        // Vérifie qu'il n'y a pas déjà un objet au point de spawn
         return !Physics.CheckSphere(spawnPoint.position, checkRadius, overlapMask, QueryTriggerInteraction.Ignore);
     }
 
-    private void SpawnOne()
+    private void SpawnOneFromPoolRandom()
     {
-        if (barrelPrefabs == null || barrelPrefabs.Length == 0 || spawnPoint == null) return;
+        List<GameObject> inactiveObjects = pool.FindAll(obj => !obj.activeInHierarchy);
 
-        var prefab = barrelPrefabs[Random.Range(0, barrelPrefabs.Length)];
-        var go = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation, spawnedParent);
-
-        alive.Add(go);
-    }
-
-    private void CleanupNulls()
-    {
-        for (int i = alive.Count - 1; i >= 0; i--)
+        if (inactiveObjects.Count == 0)
         {
-            if (alive[i] == null) alive.RemoveAt(i);
+            Debug.LogWarning("Tous les objets du pool sont actifs !");
+            return;
         }
+
+        GameObject objToSpawn = inactiveObjects[Random.Range(0, inactiveObjects.Count)];
+        objToSpawn.transform.position = spawnPoint.position;
+        objToSpawn.transform.rotation = spawnPoint.rotation;
+        objToSpawn.SetActive(true);
     }
 
-    private void OnDrawGizmosSelected()
+    private int GetAliveCount()
     {
-        if (spawnPoint == null) return;
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(spawnPoint.position, checkRadius);
+        int count = 0;
+        foreach (GameObject obj in pool)
+        {
+            if (obj.activeInHierarchy) count++;
+        }
+        return count;
     }
 }
