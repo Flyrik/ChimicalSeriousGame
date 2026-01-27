@@ -25,6 +25,7 @@ public class BarrelSpawnerPool : MonoBehaviour
     [Header("Limite de spawns")]
     public int maxSpawns = 10; 
     private int spawnCount = 0;
+    public AudioSource audioSource;
 
     private List<GameObject> pool = new List<GameObject>();
 
@@ -50,6 +51,8 @@ public class BarrelSpawnerPool : MonoBehaviour
         StartCoroutine(SpawnLoop());
         BoutonIndique.SetActive(false);
         BoutonClique.SetActive(false);
+        audioSource.Play();
+
     }
 
     private IEnumerator SpawnLoop()
