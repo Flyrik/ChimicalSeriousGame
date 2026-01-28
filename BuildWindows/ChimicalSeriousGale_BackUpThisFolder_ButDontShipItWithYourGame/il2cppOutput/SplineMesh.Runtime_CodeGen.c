@@ -1,0 +1,120 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m15CA7BB25B618E4E961B76E786517EE0E1B7F290 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m317ADCDA80B4DC398128BDBE22008A829CEE618B (void);
+extern void AnimateTextureOffset_Start_m5552821B8624F531AC7FA8B31C32DAFEF01AE0FA (void);
+extern void AnimateTextureOffset_Update_mB357C89D481F4FE715B30862D8AF37F6323CF804 (void);
+extern void AnimateTextureOffset__ctor_m409E5651C29187C2F5B070C8654E2BCC9EFC4492 (void);
+extern void ConveyorBeltMover_Start_mBFAD7B037C9E6C9E5DB543DD47E9E7B931BE33FE (void);
+extern void ConveyorBeltMover_OnCollisionEnter_m8DA67CC7F6DB57CF6BB267FA8B7620BD7D59BAFC (void);
+extern void ConveyorBeltMover_OnCollisionExit_m7967F82CCF8164CE05AF05A7865E62AB5E14C651 (void);
+extern void ConveyorBeltMover_FixedUpdate_mDEADBBB2A0B2D3ED59CAA305984993851C09BC00 (void);
+extern void ConveyorBeltMover__ctor_m5AD95F3FA0E4B3C394E5723C826608D6AA8FE4C1 (void);
+extern void SplineMesh_Awake_m8A3A77D96D068A8FC6F262ABEBE1FD1526BB100B (void);
+extern void SplineMesh_OnEnable_m02BFE54F0948300B49E9CCAA38144D163D069207 (void);
+extern void SplineMesh_OnDisable_m71BBCB7DA9D8F90CC3D05E82326CBC5D77069C56 (void);
+extern void SplineMesh_OnValidate_m4EF1D6E26E0001F4E2C013A0C8BF139C631275FB (void);
+extern void SplineMesh_GenerateMeshAlongSpline_m0B636D7234915EE77D16295C855851F031B2236E (void);
+extern void SplineMesh_CheckForErrors_m2F8C46E88512C81C9AAB751C6AFA7C89AEC989AA (void);
+extern void SplineMesh_OnSplineModified_mA27C4A021C439C970C34403CE863A3C26926293C (void);
+extern void SplineMesh__ctor_m49FA94324C1A1D24C6D6EDBF900ACFF0A9E5E44C (void);
+extern void SplineMeshResolution_GenerateMeshAlongSpline_mEF971D11C84896C8D7EE3E2F2E995ABCB721EF59 (void);
+extern void SplineMeshResolution_FindSegmentIndexFromRatios_m708F98208AA9B97692046012A786E4DAB05F94F3 (void);
+extern void SplineMeshResolution_CheckForErrors_m3507D9F8D78A46B908081DF95CAEFFAC5EDE1243 (void);
+extern void SplineMeshResolution__ctor_m333E4E89AAE060C7598D10789ED71494C8C66671 (void);
+extern void SplineMeshUtils_NormalizeMesh_mE589B57F5D9C4485AFB4B6963541558E65C4AAFC (void);
+extern void SplineMeshUtils_GetDistanceAlongSpline_mEB0A2AEA964A007A4529F57FEB7B1058DB24AD1A (void);
+extern void SplineMeshUtils_MakeUVs_m8BAC4686ED16BFAD5A6C668A79F9D69D38FDD2DB (void);
+extern void SplineMeshUtils_GetRequiredOffset_m859AF037610CEF620BC3DF0A485FCDD4A42586EB (void);
+extern void SplineMeshUtils_GetRequiredAxis_m2C8AFCA1ED55E488C196784D6ED42A5B1AAEC529 (void);
+extern void SplineMeshUtils_FindClosestSplineAndPosition_m10AAF63114AC208B9768E0DCE0193E7165A7F437 (void);
+static Il2CppMethodPointer s_methodPointers[28] = 
+{
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m15CA7BB25B618E4E961B76E786517EE0E1B7F290,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m317ADCDA80B4DC398128BDBE22008A829CEE618B,
+	AnimateTextureOffset_Start_m5552821B8624F531AC7FA8B31C32DAFEF01AE0FA,
+	AnimateTextureOffset_Update_mB357C89D481F4FE715B30862D8AF37F6323CF804,
+	AnimateTextureOffset__ctor_m409E5651C29187C2F5B070C8654E2BCC9EFC4492,
+	ConveyorBeltMover_Start_mBFAD7B037C9E6C9E5DB543DD47E9E7B931BE33FE,
+	ConveyorBeltMover_OnCollisionEnter_m8DA67CC7F6DB57CF6BB267FA8B7620BD7D59BAFC,
+	ConveyorBeltMover_OnCollisionExit_m7967F82CCF8164CE05AF05A7865E62AB5E14C651,
+	ConveyorBeltMover_FixedUpdate_mDEADBBB2A0B2D3ED59CAA305984993851C09BC00,
+	ConveyorBeltMover__ctor_m5AD95F3FA0E4B3C394E5723C826608D6AA8FE4C1,
+	SplineMesh_Awake_m8A3A77D96D068A8FC6F262ABEBE1FD1526BB100B,
+	SplineMesh_OnEnable_m02BFE54F0948300B49E9CCAA38144D163D069207,
+	SplineMesh_OnDisable_m71BBCB7DA9D8F90CC3D05E82326CBC5D77069C56,
+	SplineMesh_OnValidate_m4EF1D6E26E0001F4E2C013A0C8BF139C631275FB,
+	SplineMesh_GenerateMeshAlongSpline_m0B636D7234915EE77D16295C855851F031B2236E,
+	SplineMesh_CheckForErrors_m2F8C46E88512C81C9AAB751C6AFA7C89AEC989AA,
+	SplineMesh_OnSplineModified_mA27C4A021C439C970C34403CE863A3C26926293C,
+	SplineMesh__ctor_m49FA94324C1A1D24C6D6EDBF900ACFF0A9E5E44C,
+	SplineMeshResolution_GenerateMeshAlongSpline_mEF971D11C84896C8D7EE3E2F2E995ABCB721EF59,
+	SplineMeshResolution_FindSegmentIndexFromRatios_m708F98208AA9B97692046012A786E4DAB05F94F3,
+	SplineMeshResolution_CheckForErrors_m3507D9F8D78A46B908081DF95CAEFFAC5EDE1243,
+	SplineMeshResolution__ctor_m333E4E89AAE060C7598D10789ED71494C8C66671,
+	SplineMeshUtils_NormalizeMesh_mE589B57F5D9C4485AFB4B6963541558E65C4AAFC,
+	SplineMeshUtils_GetDistanceAlongSpline_mEB0A2AEA964A007A4529F57FEB7B1058DB24AD1A,
+	SplineMeshUtils_MakeUVs_m8BAC4686ED16BFAD5A6C668A79F9D69D38FDD2DB,
+	SplineMeshUtils_GetRequiredOffset_m859AF037610CEF620BC3DF0A485FCDD4A42586EB,
+	SplineMeshUtils_GetRequiredAxis_m2C8AFCA1ED55E488C196784D6ED42A5B1AAEC529,
+	SplineMeshUtils_FindClosestSplineAndPosition_m10AAF63114AC208B9768E0DCE0193E7165A7F437,
+};
+static const int32_t s_InvokerIndices[28] = 
+{
+	28878,
+	16719,
+	16719,
+	16719,
+	16719,
+	16719,
+	12706,
+	12706,
+	16719,
+	16719,
+	16719,
+	16719,
+	16719,
+	16719,
+	16719,
+	16312,
+	2827,
+	16719,
+	16719,
+	4531,
+	16312,
+	16719,
+	21023,
+	19885,
+	18334,
+	23730,
+	23599,
+	22277,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_SplineMesh_Runtime_CodeGenModule;
+const Il2CppCodeGenModule g_SplineMesh_Runtime_CodeGenModule = 
+{
+	"SplineMesh.Runtime.dll",
+	28,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
