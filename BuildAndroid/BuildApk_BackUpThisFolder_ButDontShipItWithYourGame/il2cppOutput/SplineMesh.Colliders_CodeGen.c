@@ -1,0 +1,69 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m2CEF0F256CE6178477E7B6CDF11BD9052692E166 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m27D4CA06D184A132D78DFED0C19CE9441C07B3B9 (void);
+extern void SplineBoxColliderGenerator_OnValidate_m08AF66965A308BD3AAC0071902C23321D9A1236E (void);
+extern void SplineBoxColliderGenerator_GenerateAndAssignMesh_mA8D5579E96C9B3BA3B805659F9ED175676498977 (void);
+extern void SplineBoxColliderGenerator_GenerateBoxColliderMesh_m47FCFC0FB25235237FDCBDF035510D4A93C399BE (void);
+extern void SplineBoxColliderGenerator__ctor_m20FB57C44DB53CB4B9F1AD9EDE12A2607DBC76FD (void);
+extern void SplineCylinderColliderGenerator_OnValidate_m31365937D94BD1ACA60AF3BDAEF8B8BADA4AF186 (void);
+extern void SplineCylinderColliderGenerator_GenerateAndAssignMesh_m70E7D2B49FC5624DAD81D93CFB03891BB7F0C2D0 (void);
+extern void SplineCylinderColliderGenerator_GenerateCylinderColliderMesh_mA37E57630A81CEBEAA778BD9A955D00C2359C3FE (void);
+extern void SplineCylinderColliderGenerator_GenerateCylinderEnd_m53F711CE7303F1D8DD1991CBF26DACFCD8CB6631 (void);
+extern void SplineCylinderColliderGenerator__ctor_m1BEB41DA67BE14660FF1F1A4B6F6932FB4111ED7 (void);
+static Il2CppMethodPointer s_methodPointers[11] = 
+{
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m2CEF0F256CE6178477E7B6CDF11BD9052692E166,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m27D4CA06D184A132D78DFED0C19CE9441C07B3B9,
+	SplineBoxColliderGenerator_OnValidate_m08AF66965A308BD3AAC0071902C23321D9A1236E,
+	SplineBoxColliderGenerator_GenerateAndAssignMesh_mA8D5579E96C9B3BA3B805659F9ED175676498977,
+	SplineBoxColliderGenerator_GenerateBoxColliderMesh_m47FCFC0FB25235237FDCBDF035510D4A93C399BE,
+	SplineBoxColliderGenerator__ctor_m20FB57C44DB53CB4B9F1AD9EDE12A2607DBC76FD,
+	SplineCylinderColliderGenerator_OnValidate_m31365937D94BD1ACA60AF3BDAEF8B8BADA4AF186,
+	SplineCylinderColliderGenerator_GenerateAndAssignMesh_m70E7D2B49FC5624DAD81D93CFB03891BB7F0C2D0,
+	SplineCylinderColliderGenerator_GenerateCylinderColliderMesh_mA37E57630A81CEBEAA778BD9A955D00C2359C3FE,
+	SplineCylinderColliderGenerator_GenerateCylinderEnd_m53F711CE7303F1D8DD1991CBF26DACFCD8CB6631,
+	SplineCylinderColliderGenerator__ctor_m1BEB41DA67BE14660FF1F1A4B6F6932FB4111ED7,
+};
+static const int32_t s_InvokerIndices[11] = 
+{
+	27874,
+	16192,
+	16192,
+	16192,
+	15994,
+	16192,
+	16192,
+	16192,
+	15994,
+	540,
+	16192,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_SplineMesh_Colliders_CodeGenModule;
+const Il2CppCodeGenModule g_SplineMesh_Colliders_CodeGenModule = 
+{
+	"SplineMesh.Colliders.dll",
+	11,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
