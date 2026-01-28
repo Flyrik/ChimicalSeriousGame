@@ -10,6 +10,7 @@ public class BacCheck : MonoBehaviour
     public int pointsWrong = -1;  // points si mauvais objet
     public AudioClip reussiteClip;
     public AudioClip echecClip;
+    public AudioClip warningClip;
     public AudioSource audioSource;
 
    
@@ -36,6 +37,8 @@ public class BacCheck : MonoBehaviour
             totalScore += pointsWrong;
             Debug.Log("❌ Mauvais objet ! Score: " + totalScore);
             audioSource.clip = echecClip;
+            audioSource.Play();
+            audioSource.clip = warningClip;
             audioSource.Play();
         }
 
